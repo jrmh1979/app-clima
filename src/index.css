@@ -36,12 +36,6 @@ body {
   height: 100 px;
 }
 
-.search-city{
-
-border-radius: 30px;
-
-
-}
 .App {
   padding-top: 3rem;
   display: flex;
@@ -67,15 +61,31 @@ border-radius: 30px;
 }
 
 button {
-  box-shadow: rgb(222, 219, 219);
-  font-style: normal;
+  box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.25);
+  font-style: 20px;
   background: #38a0d8;
-  border: solid 2px #ffffff;
   width: 178px;
   height: 38px;
   border-radius: 10px;
   cursor: pointer;
-  margin: 10px;
+  margin: 15px;
   color: #ffffff;
+  border: transparent;
 }
 
+.search-city {
+  padding: 2px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color:transparent;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 18px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-align: center;
+  
+}
+.search-city:focus {
+  outline:none;
+}

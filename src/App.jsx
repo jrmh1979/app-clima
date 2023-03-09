@@ -57,7 +57,7 @@ console.log(search)
   <div className="App" >
    
    {isLoarding && <Loader/>}
-
+   
    <input className="search-city" type="text" onChange={ e => setSearch(e.target.value) }/>
     <button onClick={ () => searchCity(search) } >Buscar</button>
 
