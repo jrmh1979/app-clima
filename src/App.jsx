@@ -49,32 +49,17 @@ console.log(search)
     
   }
 
-
-   
- 
-
   return (  
   <div className="App" >
    
    {isLoarding && <Loader/>}
-   
+   <div className="content-city">
    <input className="search-city" type="text" onChange={ e => setSearch(e.target.value) }/>
-    <button onClick={ () => searchCity(search) } >Buscar</button>
-
+   <button onClick={ () => searchCity(search) } >Buscar</button>
+   </div>
    <ClimateCard
    data = {climate}/>
-  
-    
-
-
-
-
-
-
-
-  
-    
-       
+   
     </div>
   );
 }
