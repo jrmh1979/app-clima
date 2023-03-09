@@ -55,7 +55,7 @@ console.log(search)
    {isLoarding && <Loader/>}
 
    <div className="content-city">
-      <input className ="search-city" type="text" onChange={ e => setSearch(e.target.value)} placeholder ="Escriba país o Ciudad"/>
+      <input className ="search-city" type="text" onChange={ e => setSearch(e.target.value)} placeholder ="search country or city"></input>
       <button className ="search-button"onClick={ () => searchCity(search) } ><i className ='bx bx-search'></i></button>
    </div>
 

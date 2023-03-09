@@ -95,7 +95,7 @@ button {
 
 .search-city {
   padding: 2px;
-  font-size: 20px;
+  font-size: 15px;
   border-width: 1px;
   border-color: #51b4e8;
   background-color:#6abfedad;
@@ -122,7 +122,8 @@ button {
   speak: none;
   -webkit-font-smoothing: antialiased;
 
-
+}
+  
 input {
     display: flex;
     border: none;
@@ -134,3 +135,7 @@ input {
     width: 100%;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 5; /* Firefox */
+}
