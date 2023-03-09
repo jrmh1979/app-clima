@@ -9,7 +9,7 @@ import Loader from "./components/Loader";
 function App () {
  
      //====== Cargando ======//
-  const [isLoarding, setIsLoarding] = useState (false)
+  const [isLoarding, setIsLoarding] = useState (true)
   const [climate, setClimate] = useState ({})
   
   
@@ -53,10 +53,12 @@ console.log(search)
   <div className="App" >
    
    {isLoarding && <Loader/>}
+
    <div className="content-city">
-   <input className="search-city" type="text" onChange={ e => setSearch(e.target.value) }/>
-   <button onClick={ () => searchCity(search) } >Buscar</button>
+      <input className ="search-city" type="text" onChange={ e => setSearch(e.target.value)} placeholder ="Escriba país o Ciudad"/>
+      <button className ="search-button"onClick={ () => searchCity(search) } ><i className ='bx bx-search'></i></button>
    </div>
+
    <ClimateCard
    data = {climate}/>
    
