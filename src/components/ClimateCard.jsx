@@ -21,7 +21,7 @@ import { useState } from "react"
         <p><span>Humidity : </span>{data.main?.humidity}</p>
         </div>
         
-        <div><button onClick = { () => setIsKevin (!isKevin)}>Change  F°</button></div>
+        <div className="card-button"><button onClick = { () => setIsKevin (!isKevin)}>Change  F°</button></div>
         
       </div>
     )
