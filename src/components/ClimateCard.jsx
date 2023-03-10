@@ -18,7 +18,8 @@ import { useState } from "react"
         <h1><span>Temp : </span>{Math.trunc (isKevin ? data.main?.temp - 273.15 : (data.main?.temp - 273.15)*1.8 + 32)} {isKevin ? "C°" : "F°"}</h1>
         <p><span>Country : </span>{data.sys?.country}</p>
         <p><span>City : </span>{data.name}</p>
-        <p><span>Humidity : </span>{data.main?.humidity}</p>
+        <p><span>Humidity : </span>{data.main?.humidity}%</p>
+        <p><span>Pressure : </span>{data.main?.pressure}m²</p>
         </div>
         
         <div className="card-button"><button onClick = { () => setIsKevin (!isKevin)}>Change  F°</button></div>
