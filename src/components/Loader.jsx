@@ -3,9 +3,13 @@ export default function Loader() {
   return (
     <div className="Loader">
       
-      <img className="clouds-loader"src="/assets/iconos/Loader.svg" alt="" />
-      <h1><span>Cargando...</span></h1>
-        
+      <div class="spinner">
+        <div></div>   
+        <div></div>    
+        <div></div>    
+        <div></div>    
+      </div>
+      
       </div>
   )
 }
